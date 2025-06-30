@@ -828,6 +828,9 @@ spirvbytes OptimizeSPIRV(const spirvbytes& bin, const Options &options){
 		case 15:
 			target = SPV_ENV_UNIVERSAL_1_5;
 			break;
+		case 16:
+			target = SPV_ENV_UNIVERSAL_1_6;
+			break;
 		default:
 			throw runtime_error("Unknown Vulkan version");
 			break;
